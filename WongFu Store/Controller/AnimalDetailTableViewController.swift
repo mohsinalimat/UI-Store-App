@@ -10,6 +10,8 @@ import UIKit
 
 class AnimalDetailTableViewController: UITableViewController {
 
+    @IBOutlet weak var animalImagesHeaderView: AnimalImagesHeaderView!
+    
     var animal: Animal!
     
     override func viewDidLoad() {
@@ -30,6 +32,25 @@ class AnimalDetailTableViewController: UITableViewController {
         static let suggestionCell = "SuggestionCell"
         static let buyButtonCell = "BuyButtonCell"
     }
+    
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Storyboard.showImagesPageVC{
+            
+            if let imagesPageVC = segue.destination as? AnimalImagesPageViewController{
+                
+                imagesPageVC.images = animal.images
+                imagesPageVC.pageViewControllerDelegate = animalImagesHeaderView
+                
+            }
+        }
+    }
+    
+    
+    
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 0 - animal detail cell

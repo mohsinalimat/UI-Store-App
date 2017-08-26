@@ -7,6 +7,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -90,7 +91,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lo5-V4-7Z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="678" y="1053"/>
+            <point key="canvasLocation" x="703" y="201"/>
         </scene>
         <!--Animal Detail Table View Controller-->
         <scene sceneID="rbG-vi-ZTp">
@@ -101,9 +102,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="EBj-2V-Wmw" customClass="AnimalImagesHeaderView" customModule="WongFu_Store" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upR-Ov-O4w" customClass="AnimalImagesHeaderView" customModule="WongFu_Store" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    <connections>
+                                        <segue destination="dRL-az-yc1" kind="embed" identifier="ShowImagesPageViewController" id="np3-ml-ZbM"/>
+                                    </connections>
+                                </containerView>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ile-oF-axJ">
+                                    <rect key="frame" x="168" y="330" width="39" height="37"/>
+                                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </pageControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Ile-oF-axJ" firstAttribute="centerX" secondItem="EBj-2V-Wmw" secondAttribute="centerX" id="8cI-gC-ck2"/>
+                                <constraint firstItem="upR-Ov-O4w" firstAttribute="top" secondItem="EBj-2V-Wmw" secondAttribute="top" id="SQ0-58-UD3"/>
+                                <constraint firstAttribute="bottom" secondItem="upR-Ov-O4w" secondAttribute="bottom" id="Y4X-tg-cbd"/>
+                                <constraint firstAttribute="bottom" secondItem="Ile-oF-axJ" secondAttribute="bottom" constant="8" id="ghs-my-h7N"/>
+                                <constraint firstAttribute="trailing" secondItem="upR-Ov-O4w" secondAttribute="trailing" id="gsl-G2-Olo"/>
+                                <constraint firstItem="upR-Ov-O4w" firstAttribute="leading" secondItem="EBj-2V-Wmw" secondAttribute="leading" id="o9u-Mm-o2g"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="pageControl" destination="Ile-oF-axJ" id="rhz-CK-N97"/>
+                            </connections>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnimalDetailCell" rowHeight="173" id="bZb-C6-ZU2" userLabel="AnimalDetailCell" customClass="AnimalDetailCell" customModule="WongFu_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="173"/>
+                                <rect key="frame" x="0.0" y="403" width="375" height="173"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bZb-C6-ZU2" id="JL9-Qe-ip3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
@@ -138,7 +168,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyButtonCell" rowHeight="65" id="6C6-dw-qiu">
-                                <rect key="frame" x="0.0" y="201" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="576" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6C6-dw-qiu" id="D8O-bh-wRU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
@@ -171,7 +201,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductDetailsCell" rowHeight="53" id="cq1-pw-ZU0">
-                                <rect key="frame" x="0.0" y="266" width="375" height="53"/>
+                                <rect key="frame" x="0.0" y="641" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cq1-pw-ZU0" id="rRm-sj-yhB">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="52.5"/>
@@ -192,7 +222,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestionCell" rowHeight="443" id="T5Y-km-aUu" customClass="SuggestionTableViewCell" customModule="WongFu_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="319" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="694" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T5Y-km-aUu" id="eeH-DI-gdk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="442.5"/>
@@ -269,7 +299,44 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tM-ZK-X8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="1198"/>
+            <point key="canvasLocation" x="1502" y="106"/>
+        </scene>
+        <!--Animal Images Page View Controller-->
+        <scene sceneID="qYp-7J-5p8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="dRL-az-yc1" customClass="AnimalImagesPageViewController" customModule="WongFu_Store" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLY-tq-sTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2426" y="-169"/>
+        </scene>
+        <!--Animal Image View Controller-->
+        <scene sceneID="Gtk-4V-Qx0">
+            <objects>
+                <viewController storyboardIdentifier="AnimalImageViewController" id="EfP-M6-hDD" customClass="AnimalImageViewController" customModule="WongFu_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="74h-E5-azi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t1" translatesAutoresizingMaskIntoConstraints="NO" id="Iq4-Te-YC7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V5i-ot-Ohd" firstAttribute="trailing" secondItem="Iq4-Te-YC7" secondAttribute="trailing" id="6zE-kI-4vY"/>
+                            <constraint firstItem="Iq4-Te-YC7" firstAttribute="top" secondItem="V5i-ot-Ohd" secondAttribute="top" id="Df7-bu-bQc"/>
+                            <constraint firstItem="V5i-ot-Ohd" firstAttribute="bottom" secondItem="Iq4-Te-YC7" secondAttribute="bottom" id="MCy-yi-T7i"/>
+                            <constraint firstItem="Iq4-Te-YC7" firstAttribute="leading" secondItem="V5i-ot-Ohd" secondAttribute="leading" id="qjJ-tT-LJ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V5i-ot-Ohd"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Iq4-Te-YC7" id="beR-dd-PXL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqN-N1-dVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3199" y="-58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aK2-Nd-cWy">
@@ -291,7 +358,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhq-q8-kOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="1053"/>
+            <point key="canvasLocation" x="-9" y="201"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uvQ-Yh-0Vk">
@@ -332,7 +399,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meA-ef-Gj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="225"/>
+            <point key="canvasLocation" x="-9" y="1236"/>
         </scene>
         <!--SHOPPING BAG-->
         <scene sceneID="jPh-gt-neN">
@@ -595,7 +662,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P93-HG-PsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="224"/>
+            <point key="canvasLocation" x="735" y="1235"/>
         </scene>
         <!--CHECKOUT-->
         <scene sceneID="LbH-L3-jAp">
@@ -889,7 +956,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqR-hH-ZPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="120"/>
+            <point key="canvasLocation" x="1503" y="1131"/>
         </scene>
     </scenes>
     <resources>
@@ -897,5 +964,6 @@
         <image name="icon-bag-filled" width="25" height="25"/>
         <image name="icon-home" width="24" height="24"/>
         <image name="s1" width="100" height="100"/>
+        <image name="t1" width="100" height="71"/>
     </resources>
 </document>

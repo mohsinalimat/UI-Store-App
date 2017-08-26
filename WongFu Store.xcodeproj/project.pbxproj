@@ -12,7 +12,7 @@
 		FA15F2F61F4E63E50051A334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA15F2F51F4E63E50051A334 /* Assets.xcassets */; };
 		FA15F2F91F4E63E50051A334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15F2F71F4E63E50051A334 /* LaunchScreen.storyboard */; };
 		FA15F3011F4E646F0051A334 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3001F4E646F0051A334 /* AnimalModel.swift */; };
-		FA15F3031F4E649E0051A334 /* ShoeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3021F4E649E0051A334 /* ShoeDetailTableViewController.swift */; };
+		FA15F3031F4E649E0051A334 /* AnimalDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3021F4E649E0051A334 /* AnimalDetailTableViewController.swift */; };
 		FA15F3071F4E65660051A334 /* AnimalDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3061F4E65660051A334 /* AnimalDetailTableViewCell.swift */; };
 		FA15F3091F4E65A00051A334 /* SuggestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3081F4E65A00051A334 /* SuggestionCollectionViewCell.swift */; };
 		FA15F30B1F4E65C60051A334 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F30A1F4E65C60051A334 /* SuggestionTableViewCell.swift */; };
@@ -21,6 +21,9 @@
 		FA15F3251F4E66200051A334 /* ShoppingBagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3231F4E661F0051A334 /* ShoppingBagTableViewController.swift */; };
 		FA15F3261F4E66200051A334 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F3241F4E661F0051A334 /* CheckoutTableViewController.swift */; };
 		FA15F32B1F4E6C8F0051A334 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA15F2FA1F4E63E50051A334 /* Info.plist */; };
+		FA3112EC1F516301003DE79B /* AnimalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3112EB1F516301003DE79B /* AnimalImageViewController.swift */; };
+		FA3112EE1F5163AC003DE79B /* AnimalImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3112ED1F5163AC003DE79B /* AnimalImagesPageViewController.swift */; };
+		FA3112F01F516E91003DE79B /* AnimalImagesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3112EF1F516E91003DE79B /* AnimalImagesHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +34,7 @@
 		FA15F2F81F4E63E50051A334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA15F2FA1F4E63E50051A334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA15F3001F4E646F0051A334 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
-		FA15F3021F4E649E0051A334 /* ShoeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailTableViewController.swift; sourceTree = "<group>"; };
+		FA15F3021F4E649E0051A334 /* AnimalDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailTableViewController.swift; sourceTree = "<group>"; };
 		FA15F3061F4E65660051A334 /* AnimalDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailTableViewCell.swift; sourceTree = "<group>"; };
 		FA15F3081F4E65A00051A334 /* SuggestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA15F30A1F4E65C60051A334 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
@@ -39,6 +42,9 @@
 		FA15F3201F4E66180051A334 /* FeedAnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAnimalTableViewCell.swift; sourceTree = "<group>"; };
 		FA15F3231F4E661F0051A334 /* ShoppingBagTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagTableViewController.swift; sourceTree = "<group>"; };
 		FA15F3241F4E661F0051A334 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
+		FA3112EB1F516301003DE79B /* AnimalImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImageViewController.swift; sourceTree = "<group>"; };
+		FA3112ED1F5163AC003DE79B /* AnimalImagesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImagesPageViewController.swift; sourceTree = "<group>"; };
+		FA3112EF1F516E91003DE79B /* AnimalImagesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImagesHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				FA15F31F1F4E66180051A334 /* FeedTableViewController.swift */,
-				FA15F3021F4E649E0051A334 /* ShoeDetailTableViewController.swift */,
+				FA15F3021F4E649E0051A334 /* AnimalDetailTableViewController.swift */,
 				FA15F3231F4E661F0051A334 /* ShoppingBagTableViewController.swift */,
 				FA15F3241F4E661F0051A334 /* CheckoutTableViewController.swift */,
+				FA3112EB1F516301003DE79B /* AnimalImageViewController.swift */,
+				FA3112ED1F5163AC003DE79B /* AnimalImagesPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,10 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				FA15F2F21F4E63E50051A334 /* Main.storyboard */,
+				FA15F3201F4E66180051A334 /* FeedAnimalTableViewCell.swift */,
 				FA15F3061F4E65660051A334 /* AnimalDetailTableViewCell.swift */,
 				FA15F3081F4E65A00051A334 /* SuggestionCollectionViewCell.swift */,
 				FA15F30A1F4E65C60051A334 /* SuggestionTableViewCell.swift */,
-				FA15F3201F4E66180051A334 /* FeedAnimalTableViewCell.swift */,
+				FA3112EF1F516E91003DE79B /* AnimalImagesHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA15F3251F4E66200051A334 /* ShoppingBagTableViewController.swift in Sources */,
-				FA15F3031F4E649E0051A334 /* ShoeDetailTableViewController.swift in Sources */,
+				FA15F3031F4E649E0051A334 /* AnimalDetailTableViewController.swift in Sources */,
+				FA3112EC1F516301003DE79B /* AnimalImageViewController.swift in Sources */,
+				FA3112EE1F5163AC003DE79B /* AnimalImagesPageViewController.swift in Sources */,
 				FA15F3091F4E65A00051A334 /* SuggestionCollectionViewCell.swift in Sources */,
 				FA15F3211F4E66180051A334 /* FeedTableViewController.swift in Sources */,
 				FA15F30B1F4E65C60051A334 /* SuggestionTableViewCell.swift in Sources */,
@@ -203,6 +214,7 @@
 				FA15F3071F4E65660051A334 /* AnimalDetailTableViewCell.swift in Sources */,
 				FA15F2EF1F4E63E50051A334 /* AppDelegate.swift in Sources */,
 				FA15F3261F4E66200051A334 /* CheckoutTableViewController.swift in Sources */,
+				FA3112F01F516E91003DE79B /* AnimalImagesHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
